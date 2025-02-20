@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBuy | Home</title>
+    <link rel="stylesheet" href="CSS/style.css">  
+</head>
+<body>
+    <!--Navigation menu-->
+    <header>
+        <!--Branding-->
+        
+            <div id="brand">
+                <h1><span class="logo">AutoBuy</span></h1>
+            </div>
+        
+        <!--menu-->
+        <nav id="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="seller.html">Seller</a></li>
+            <li class="current"><a href="search.html">Search</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        </nav>
+    </header>
+     <main>
+        <h1>Find Your Perfect Car</h1>
+        <section class="search-section">
+            <form id="searchForm">
+                <label for="model">Car Model:</label>
+                <input type="text" id="model" name="model" placeholder="e.g., Corolla" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="model" name="model" placeholder="e.g., Nairobi" required>
+                
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section class="results-section">
+            <h2>Search Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                        <th>Mileage</th>
+                        <th>Location</th>
+                        <th>Price (USD)</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTable">
+                    <!--For dynamic search-->
+                </tbody>
+            </table>
+        </section>
+     </main>
+    <footer>
+        <p>&copy; 2025 AutoBuy. All Rights Reserved.</p>
+        <p>Images Sources:Pexels</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
